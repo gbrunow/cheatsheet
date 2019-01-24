@@ -2,6 +2,7 @@
 
 ## Change author of all commits
 See [Changing author info](https://help.github.com/articles/changing-author-info/)
+(You may need to [remove previous backups](#remove-original-backup) before hand)
 1. Run:
 ```shell
 git filter-branch --env-filter '
@@ -16,4 +17,9 @@ export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
 2. Then:
 ```
 git push --force --tags origin 'refs/heads/*'
+```
+
+## Remove Original Backup
+```shell
+git update-ref -d refs/original/refs/heads/master
 ```
