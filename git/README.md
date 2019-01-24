@@ -2,7 +2,7 @@
 
 ## Change author of all commits
 See [Changing author info](https://help.github.com/articles/changing-author-info/)
-Run:
+1. Run:
 ```
 git filter-branch --env-filter -f '
 CORRECT_NAME="Guilherme Brunow"
@@ -13,7 +13,7 @@ export GIT_AUTHOR_NAME="$CORRECT_NAME"
 export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
 ' --tag-name-filter cat -- --branches --tags
 ```
-Then:
+2. Then:
 ```
 git push --force --tags origin 'refs/heads/*'
 ```
