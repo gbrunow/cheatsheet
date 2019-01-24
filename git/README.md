@@ -4,7 +4,7 @@
 See [Changing author info](https://help.github.com/articles/changing-author-info/)
 1. Run:
 ```
-git filter-branch --env-filter -f '
+git filter-branch --env-filter '
 CORRECT_NAME="Guilherme Brunow"
 CORRECT_EMAIL="gbrunow@outlook.com"
 export GIT_COMMITTER_NAME="$CORRECT_NAME"
