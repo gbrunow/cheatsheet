@@ -3,7 +3,7 @@
 ## Change author of all commits
 See [Changing author info](https://help.github.com/articles/changing-author-info/)
 1. Run:
-```
+```shell
 git filter-branch --env-filter '
 CORRECT_NAME="Guilherme Brunow"
 CORRECT_EMAIL="gbrunow@outlook.com"
