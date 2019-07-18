@@ -1,5 +1,11 @@
 # Git
 
+## Save user and password
+
+```bash
+git config credential.helper store
+```
+
 ## Change author of all commits
 See [Changing author info](https://help.github.com/articles/changing-author-info/)
 (You may need to [remove previous backups](#remove-original-backup) before hand)
