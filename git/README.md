@@ -59,3 +59,18 @@ git push --force --tags origin 'refs/heads/*'
 ```shell
 git update-ref -d refs/original/refs/heads/master
 ```
+
+## Delete Tag Locally and from Remote
+```shell
+# delete local tag '12345'
+git tag -d 12345
+# delete remote tag '12345' (eg, GitHub version too)
+git push origin :refs/tags/12345
+```
+
+Alternative approach
+
+```shell
+git push --delete origin tagName
+git tag -d tagName
+```
